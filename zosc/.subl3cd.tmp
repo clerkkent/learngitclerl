@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zosc-index</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script type="text/javascript" src="JS/jquery-1.11.3.js"></script>
+</head>
+<body>
+<!--top-->
+<div id="ttop">
+<div id="top" class="topp">
+	<ul class="left">
+		<li>HI,欢迎光临</li>
+		<li><a href="#">郑欧商城</a></li>
+		<li><a href="#">请登录</a></li>
+		<li><a href="#">免费注册</a></li>
+		<li class="cont1"><a href="#"></a></li>
+		<li class="cont2"><a href="#"></a></li>
+		<li class="cont3"><a href="#"></a></li>
+	</ul>
+	<ul class="right">
+		<li class="oli1">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">手机移动端</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<img src="images/top/all_app.png" alt="#"/>
+				</dd>
+			</dl>
+		</li>
+		<li class="oli2">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">商家管理</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<a href="">商家登录</a>
+					<a href="">商家登录</a>
+					<a href="">商家登录</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="oli3">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">我的订单</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<a href="">待付款</a>
+					<a href="">待确认收货</a>
+					<a href="">待评价交易</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="oli4">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">我的收藏</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<a href="">商品收藏</a>
+					<a href="">店铺收藏</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="oli5">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">我的收藏</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<p><a href="">商品收藏</a></p>
+					<p><a href="">店铺收藏</a></p>
+				</dd>
+			</dl>
+		</li>
+		<li class="oli6">
+			<dl>
+				<dt>
+					<span></span>
+					<a href="">关注我们</a>
+					<img src="images/top/nav向下箭头.jpg" alt="#"/>
+				</dt>
+				<dd>
+					<p>扫描二维码</p>
+					<p>关注商城微信</p>
+					<img src="images/top/all_app.png" alt="#"/>
+				</dd>
+			</dl>
+		</li>
+	</ul>
+	<script type="text/javascript"><!--顶部JS-->
+	var oULi = document.getElementsByClassName('right')[0];
+	var oLi = oULi.getElementsByTagName('li');
+	//console.log(oLi);
+	for(i=0;i<6;i++){
+			oLi[i].index=i;
+			oLi[i].onmouseover=function(){
+			var sP = this.getElementsByTagName('span')[0];
+			var dD = this.getElementsByTagName('dd')[0];
+			var dL = this.getElementsByTagName('dl')[0];
+			var iM = this.getElementsByTagName('img')[0];
+			console.log(dD)
+			dD.style.display="block";
+			dL.style.background="#FFF"
+			dL.style.zIndex="100";
+			iM.style.transform="rotate(180deg)"
+			if(this.index<5){
+			sP.style.backgroundPosition=-15*this.index+"px"+" -30px";
+
+			}
+		}
+			oLi[i].onmouseout=function(){
+			var sP = this.getElementsByTagName('span')[0];
+			var dD = this.getElementsByTagName('dd')[0];
+			var dL = this.getElementsByTagName('dl')[0];
+			var iM = this.getElementsByTagName('img')[0];
+			dD.style.display="none";
+			dL.style.background="#fafafa"
+			dL.style.zIndex="100";
+			iM.style.transform="rotate(0deg)"
+			if(this.index<5){
+			sP.style.backgroundPosition=-15*this.index+"px"+" -15px";
+			}
+			}
+			}
+	</script>
+</div>
+</div>
+<!--search-->
+<div id="ssea">
+<div id="sea" class="topp">
+	<img class="s1" src="images/search/05222665848380976.gif" alt="#"/>
+	<img class="s2"src="images/Promotion/05292351589359413.gif" alt="#"/>
+	<div class="s3">
+		<form action="" method="get">
+			<div class="se0">
+				<p class="visible">商品<b></b></p>
+				<p class="invisible">店铺</p>
+			</div>
+			<input class="se1" type="text" placeholder="请输入您要搜索的商品关键字"/>
+			<input class="se2" type="button" value="搜索"/>
+		</form>
+		<ul>
+			<li>热门搜索：</li>
+			<li><a href="">一元购</a></li>
+			<li><a href="">国庆</a></li>
+			<li><a href="">礼盒</a></li>
+			<li><a href="">团购</a></li>
+			<li><a href="">爱他美</a></li>
+			<li><a href="">多买多减</a></li>
+			<li><a href="">跨境直邮</a></li>
+			<li><a href="">牛奶</a></li>
+		</ul>
+	</div>
+</div>	
+</div>
+<!--nav-->
+<div id="nna">
+<div id="na" class="topp">
+	<ul class="na">
+		<li class="fir"><span></span><a href="">所有分类</a></li>
+		<li class="sec"><a href="">首页</a></li>
+		<li><a href="">抢购</a></li>
+		<li><a href="">领取积分中心</a></li>
+		<li><a href="">限时折扣</a></li>
+		<li><a href="">店铺</a></li>
+		<li><a href="">国家馆</a></li>
+		<li><a href="">消费者告知书</a></li>
+		<li><a href="">关于我们</a></li>
+		<li><a href="">公司官网</a></li>
+		<li><a href="">新闻报道</a></li>
+	</ul>
+	<ul class="goodlist">
+		<li class="gl1">
+		<div class="glv"><span></span><a>美妆个护</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>面部护理<b></b></dt>
+				<dd>
+					<a href="">洁面</a>
+					<a href="">唇膏</a>
+					<a href="">套装</a>
+					<a href="">水乳</a>
+					<a href="">面霜</a>
+					<a href="">鼻贴</a>
+					<a href="">精华</a>
+					<a href="">卸妆</a>
+					<a href="">护肤</a>
+					<a href="">面膜</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>眼部护理<b></b></dt>
+				<dd>
+					<a href="">眼霜</a>
+					<a href="">眼贴</a>	
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>洗发护发<b></b></dt>
+				<dd>
+					<a href="">洗发</a>
+					<a href="">护发</a>
+					<a href="">染发</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>香水彩妆<b></b></dt>
+				<dd>
+					<a href="">气垫</a>
+					<a href="">BB</a>
+					<a href="">腮红</a>
+					<a href="">隔离</a>
+					<a href="">口红</a>
+					<a href="">粉饼</a>
+				</dd>
+			</dl><br/>
+		</div>
+		</li>
+		<li class="gl2">
+		<div class="glv"><span></span><a>母婴精品</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>奶粉<b></b></dt>
+				<dd>
+					<a href="">婴儿奶粉</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>婴儿食品<b></b></dt>
+				<dd>
+					<a href="">牛奶粉</a>
+					<a href="">米粉</a>
+					<a href="">DHA</a>
+					<a href="">钙铁锌</a>
+					<a href="">鱼油</a>
+					<a href="">维生素</a>
+					<a href="">益生菌</a>
+					<a href="">面条</a>
+					<a href="">糖果</a>
+					<a href="">肠胃调节</a>
+				</dd>
+			</dl><br/>
+		</div>
+		</li>
+		<li class="gl3">
+		<div class="glv"><span></span><a>食品饮料</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>休闲食品<b></b></dt>
+				<dd>
+					<a href="">提拉米苏</a>
+					<a href="">谷物棒</a>
+					<a href="">休闲零食</a>
+					<a href="">糖果</a>
+					<a href="">巧克力</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>粮油调味<b></b></dt>
+				<dd>
+					<a href="">食用油</a>
+					<a href="">调味品</a>
+					<a href="">米面杂粮</a>
+					
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>世界名酒<b></b></dt>
+				<dd>
+					<a href="">白酒</a>
+					<a href="">红酒</a>
+					<a href="">啤酒</a>
+				</dd>
+			</dl>
+		</div>
+		</li>
+		<li class="gl4">
+		<div class="glv"><span></span><a>生活家居</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>居家日用<b></b></dt>
+				<dd>
+					<a href="">驱蚊驱虫</a>
+					<a href="">洗衣护衣</a>
+					<a href="">鞋油</a>
+					<a href="">清洁纸品</a>
+					<a href="">面霜</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>厨房用品<b></b></dt>
+				<dd>
+					<a href="">榨汁机</a>
+					<a href="">净水器</a>
+					<a href="">锅具</a>
+				</dd>
+			</dl><br/>
+		<br/>
+		</div>
+		</li>
+		<li class="gl5">
+		<div class="glv"><span></span><a>基础营养</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>营养食品<b></b></dt>
+				<dd>
+					<a href="">蜂蜜</a>
+				</dd>
+			</dl><br>
+			<dl>
+				<dt>补<b></b></dt>
+				<dd>
+					<a href="">补</a>
+				</dd>
+			</dl><br>
+			
+		</div>
+		</li>
+		<li class="gl6">
+		<div class="glv"><span></span><a>箱包眼镜</a><b></b></div>
+		<div class="glu">
+			<dl>
+				<dt>箱包<b></b></dt>
+				<dd>
+					<a href="">单肩包</a>
+					<a href="">斜挎包</a>
+					<a href="">手提包</a>
+					<a href="">双肩包</a>
+					<a href="">钱包</a>
+				</dd>
+			</dl><br/>
+			<dl>
+				<dt>眼镜<b></b></dt>
+				<dd>
+					<a href="">太阳镜</a>
+				</dd>
+			</dl>
+		</div>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		var oUln=document.getElementsByClassName('goodlist')[0];
+		var oLin=oUln.getElementsByTagName('li');
+		var oGlu=oUln.getElementsByClassName('glu');
+		for(i=0;i<oLin.length;i++){
+			oLin[i].ind=i;
+			oLin[i].onmouseover=function(){
+			oGlu[this.ind].style.display="block";
+			}
+			oLin[i].onmouseout=function(){
+			oGlu[this.ind].style.display="none";
+			}
+		}
+	</script>
+</div>
+</div>
+<!--banner-->
+<div id="bban">
+<div id="ban" class="topp">
+	<div class="box1">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="left"></div>
+		<div class="right"></div>	
+		<div class="sp"><span></span><span></span><span></span><span></span><span></span></div>
+		<img class="bannk1" src="images/banner/bannner1.jpg" alt="#"/>
+		<img class="bannk2" src="images/banner/banner2.jpg" alt="#"/>
+	</div>
+	<script type="text/javascript" src="js/move.js"></script>
+	<script>
+	var oDl=document.getElementsByClassName('box1')[0];
+	var oUl=oDl.children[0];
+	var sPa=oDl.getElementsByTagName('span');
+	var tF=oDl.children[1];
+	var tR=oDl.children[2];
+	//console.log(oUl.children[1])
+	var index=0;
+	var zIndex=2;
+	for(var i=0;i<oUl.children.length;i++){
+		oUl.children[i].style.background="url(images/banner/"+(i+1)+".jpg) center center no-repeat";
+	}
+	
+	//var num=0;
+	oUl.children[0].style.opacity="1";
+	sPa[0].style.background="#ff3100";
+	
+	for(j=0;j<sPa.length;j++){
+		sPa[j].ind=j;
+		sPa[j].onclick=function(){
+			index=this.ind;
+			fnChange(index);
+		}
+		
+	}	
+	
+	
+	var time=setInterval(fnNext,3000);
+	oDl.onmouseover=function(){
+		clearInterval(time);
+		tF.style.display="block"
+		tR.style.display="block"
+	}
+	oDl.onmouseout=function(){
+		time=setInterval(fnNext,3000);
+		tF.style.display="none"
+		tR.style.display="none"
+	}
+	
+	tF.onclick=fnPre;
+	tR.onclick=fnNext;
+	
+	
+	function fnNext(){
+		if(index==oUl.children.length-1){
+			index=0;
+		}else{
+			index++;
+		}
+		fnChange(index);
+	}
+	
+	function fnPre(){
+		if(index==0){
+			index=oUl.children.length-1;
+		}else{
+			index--;
+		}
+		fnChange(index);
+	}
+	
+	function fnChange(num){
+	for(i=0;i<oUl.children.length;i++){
+			sPa[i].style.background="#666";
+		}
+		oUl.children[num].style.opacity="0";
+		oUl.children[num].style.zIndex=zIndex++;
+		sPa[num].style.background="#ff3100";
+		move(oUl.children[num],'opacity',100);
+	}
+</script>
+</div>
+</div>
+<!--Promotion-->
+<div id="ppro">
+<div id="pro" class="topp">
+	<div class="left">
+			<div class="clock">
+            <div class="clock-h" id="ClockHours"></div>
+            <div class="clock-m"></div>
+            <div class="clock-s"><b></b></div>
+          	</div>
+	</div>
+	<div class="right" id='right'>
+		<a href=""><img src="images/Promotion/web-101-102-1-1.jpg" alt="#"/></a>
+		<a href=""><img src="images/Promotion/web-101-102-1-2.jpg" alt="#"/></a>
+		<a href=""><img src="images/Promotion/web-101-102-1-3.jpg" alt="#"/></a>
+		<a href="" class="last"><img src="images/Promotion/web-101-102-1-4.jpg" alt="#"/></a>
+		<div class="pre"></div>
+		<div class="next"></div>
+	</div>
+	<script type="text/javascript">
+		var oPromoRight=document.getElementById('right');
+		var oPromoa=oPromoRight.getElementsByTagName('a');
+		var oClockh=document.getElementsByClassName('clock-h')[0];
+		var oClockm=document.getElementsByClassName('clock-m')[0];
+		var oClocks=document.getElementsByClassName('clock-s')[0];//以上为获取时钟指针节点
+
+		
+		setInterval(function(){
+			var dDate=new Date();
+			var h=dDate.getHours();
+			var m=dDate.getMinutes();
+			var s=dDate.getSeconds();
+			oClockh.style.transform="rotate("+h*30+"deg)";
+			oClockm.style.transform="rotate("+m*6+"deg)";
+			oClocks.style.transform="rotate("+s*6+"deg)";
+			//console.log(h)
+		},1000);
+		/*var h=0;
+		var m=0;
+		var s=0;
+		var timeh=setInterval(function(){
+			oClockh.style.transform="rotate("+h+"deg)"
+			h++;
+		},1000*3600);
+		var timem=setInterval(function(){
+			oClockm.style.transform="rotate("+m+"deg)"
+			m++;
+		},1000*60);
+		var times=setInterval(function(){
+			oClocks.style.transform="rotate("+s+"deg)"
+			s++;
+		},1000);*///以上为通过定时器移动指针
+		//console.log(oPromoRight)
+		oPromoRight.onmouseover=function(){
+			for(var i=0;i<oPromoa.length;i++){
+				oPromoa[i].style.opacity="1";	
+			}
+		}
+		for(var i=0;i<oPromoa.length;i++){
+				oPromoa[i].onmouseover=function(){
+					this.style.opacity="1";	
+				}	
+			}
+		oPromoRight.onmouseout=function(){
+			for(var i=0;i<oPromoa.length;i++){
+				oPromoa[i].style.opacity="1";
+			}
+		}//此段程序需添加DOM2级事件防止冒泡
+	</script>
+</div>
+</div>
+<!--market-->
+<div id='mmark'>
+<div id='mark'  class="topp">
+	<div class="markleft"><!--market左部展示-->
+		<ul>
+			<li>亲源配方<b></b></li>
+			<li>韩装特惠<b></b></li>
+			<li>邂“后”<b></b></li>
+			<li>欢乐好礼<b></b></li>
+			<li>零食伴游<b></b></li>
+		</ul>
+		<div class="markhidden">
+			<dl>
+				<dt><img src="images/mark/classify/1-1.jpg" alt="">
+				</dt>
+				<dd>
+					<p>
+						德国爱他美奶粉PRE段两盒装  欧洲团爱他美（跨境直邮） 2盒/组（800克/盒）
+					</p>
+					<span>318.00</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/mark/classify/1-2.jpg" alt="">
+				</dt>
+				<dd>
+					<p>
+						德国爱他美奶粉PRE段两盒装  欧洲团爱他美（跨境直邮） 2盒/组（800克/盒）
+					</p>
+					<span>318.00</span>
+				</dd>
+			</dl>	
+			<dl>
+				<dt><img src="images/mark/classify/1-3.jpg" alt="">
+				</dt>
+				<dd>
+					<p>
+						德国爱他美奶粉PRE段两盒装  欧洲团爱他美（跨境直邮） 2盒/组（800克/盒）
+					</p>
+					<span>318.00</span>
+				</dd>
+			</dl>	
+			<dl>
+				<dt><img src="images/mark/classify/1-4.jpg" alt="">
+				</dt>
+				<dd>
+					<p>
+						德国爱他美奶粉PRE段两盒装  欧洲团爱他美（跨境直邮） 2盒/组（800克/盒）
+					</p>
+					<span>318.00</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/mark/classify/1-5.jpg" alt="">
+				</dt>
+				<dd>
+					<p>
+						德国爱他美奶粉PRE段两盒装  欧洲团爱他美（跨境直邮） 2盒/组（800克/盒）
+					</p>
+					<span>318.00</span>
+				</dd>
+			</dl>
+		</div>
+		<!--market Ajax-->
+		<script type="text/javascript">
+			/*var oMarkleft=document.getElementsByClassName('markleft')[0];
+			var oMarkleftUl=oMarkleft.getElementsByClassName('ul')[0];
+			var oMarkhidden=document.getElementsByClassName('markhidden')[0];
+			for(var i=0;i<oMarkleftUl.children.length;i++){
+				oMarkleftUl.children[i].onmouseover=function(){
+					
+				}
+			}*///原生JS	
+			$(function(){
+				//console.log($(".markleft ul li").length);
+				for(var i=0;i<$(".markleft ul li").length;i++){
+					$(".markleft ul li")[i].index=i;
+					$(".markleft ul li")[i].onmouseover=function marketchange(){
+						var oMarkhidden=document.getElementsByClassName('markhidden')[0];
+							oMarkhidden.innerHTML="";
+						//console.log(1);
+						$.get("json/market"+this.index+".json",function(data){
+							var aData=eval(data);
+							for(var j=0;j<aData.length;j++){
+								oMarketDl=document.createElement('dl');
+								oMarketDl.innerHTML='<dt><img src="'+aData[j]['img']+'" alt=""></dt><dd><p>' +aData[j]['name']+'</p><span>'+aData[j]['price']+'</span></dd>';
+								oMarkhidden.appendChild(oMarketDl);
+							}	
+						},"text")
+					}
+				}
+			})
+		</script>
+		
+	</div>
+	<div class="markright"><!--market右部展示-->
+		<div class="title">限时折扣</div>
+		<ul>
+			<li>
+				<p class="marktime">
+					<b></b>
+					<span class="mark_d"></span>天
+					<span class="mark_h"></span>小时
+					<span class="mark_m"></span>分
+					<span class="mark_s"></span>秒
+				</p>
+				<dl>
+					<dt><a href=""><img src="images/mark/discount/1.jpg" alt="" /></a></dt>
+					<dd>
+						<p class="market_right_price">￥248.00<span>￥278.00</span></p>
+						<p class="market_right_name">德国进口比特堡330ml优质啤酒24罐装 啤酒特惠（郑欧班列进口商品） 24罐（330ml/罐）</p>
+					</dd>
+				</dl>
+				<div class="mark_discount">
+					<p>6.1折</p>
+				</div>
+			</li>
+			<li>
+				<p class="marktime">
+					<b></b>
+					<span class="mark_d"></span>天
+					<span class="mark_h"></span>小时
+					<span class="mark_m"></span>分
+					<span class="mark_s"></span>秒
+				</p>
+				<dl>
+					<dt><a href=""><img src="images/mark/discount/2.jpg" alt="" /></a></dt>
+					<dd>
+						<p class="market_right_price">￥248.00<span>￥278.00</span></p>
+						<p class="market_right_name">德国进口比特堡330ml优质啤酒24罐装 啤酒特惠（郑欧班列进口商品） 24罐（330ml/罐）</p>
+					</dd>
+				</dl>
+				<div class="mark_discount">
+					<p>6.1折</p>
+				</div>
+			</li>
+			<li>
+				<p class="marktime">
+					<b></b>
+					<span class="mark_d"></span>天
+					<span class="mark_h"></span>小时
+					<span class="mark_m"></span>分
+					<span class="mark_s"></span>秒
+				</p>
+				<dl>
+					<dt><a href=""><img src="images/mark/discount/3.jpg" alt="" /></a></dt>
+					<dd>
+						<p class="market_right_price">￥248.00<span>￥278.00</span></p>
+						<p class="market_right_name">德国进口比特堡330ml优质啤酒24罐装 啤酒特惠（郑欧班列进口商品） 24罐（330ml/罐）</p>
+					</dd>
+				</dl>
+				<div class="mark_discount">
+					<p>6.1折</p>
+				</div>
+			</li>
+			<li>
+				<p class="marktime">
+					<b></b>
+					<span class="mark_d"></span>天
+					<span class="mark_h"></span>小时
+					<span class="mark_m"></span>分
+					<span class="mark_s"></span>秒
+				</p>
+				<dl>
+					<dt><a href=""><img src="images/mark/discount/4.jpg" alt="" /></a></dt>
+					<dd>
+						<p class="market_right_price">￥248.00<span>￥278.00</span></p>
+						<p class="market_right_name">德国进口比特堡330ml优质啤酒24罐装 啤酒特惠（郑欧班列进口商品） 24罐（330ml/罐）</p>
+					</dd>
+				</dl>
+				<div class="mark_discount">
+					<p>6.1折</p>
+				</div>
+			</li>
+		</ul>
+		<div class="mark_pre"></div>
+		<div class="mark_next"></div>
+		<script type="text/javascript">
+			var markDay=12,markHours=24,markMinute=60,markSecond=60;
+			var market_b=0;
+			var market_timer=setInterval(mark_change,2000);
+
+
+
+
+				function mark_change(){//左右移动模块
+				var a=parseInt(Math.random()*4);
+				market_b=a;
+				$('.markright ul').css({left:-market_b*211+'px'})
+				}
+
+			$('.markright').mouseout(function(){
+				market_timer=setInterval(mark_change,2000);
+			})
+			$('.markright').mouseover(function(){
+				clearInterval(market_timer);
+				$('.markright .mark_pre').click(function(){
+					if(market_b==0){
+						market_b=$('.markright ul li').length-1;
+						
+					}else{
+						market_b--;
+						
+					}
+					$('.markright ul').css({left:-market_b*211+'px'})
+					});
+				$('.markright .mark_next').click(function(){
+					if(market_b==$('.markright ul li').length-1){
+						market_b=0;
+						
+					}else{
+						market_b++;
+						
+					}
+					$('.markright ul').css({left:-market_b*211+'px'})
+					});
+			})
+
+			//倒计时JS模块，此模块为既定赋值四个计时器其初始时间相同，未封装,
+			//console.log($('.marktime'));
+			var market_time=setInterval(function(){
+				markSecond--;
+				if(markSecond==0){
+					markMinute--;
+					markSecond=60;
+				}
+				if(markMinute==0){
+					markHours--;
+					markMinute=60;
+				}
+				if(markHours==0){
+					markDay--;
+					markHours=24;
+				}
+				for(var i=0;i<$('.marktime').length;i++){
+				$('.marktime').eq(i).find('span').eq(0).html(markDay);
+				$('.marktime').eq(i).find('span').eq(1).html(markHours);
+				$('.marktime').eq(i).find('span').eq(2).html(markMinute);
+				$('.marktime').eq(i).find('span').eq(3).html(markSecond);
+			}
+			},1000) 
+			
+		</script>
+	</div>
+</div>
+</div>
+<!--transition-->
+<div id="ttr1">
+	<a href="" id="tr1" class="topp"><img src="images/transition1/1.jpg"></a>
+</div>
+<!--fflo1-->
+<div id="shopping_center">
+<div class="fflo">
+	<div id="flo" class="topp">
+		<div class="flo_left">
+			<h3><span>1F</span> Whoo 后</h3>
+			<ul class="flo_label">
+				<li><a href="">套装</a></li>
+				<li><a href="">洁面</a></li>
+			</ul>
+			<img class="flo_left_logo" src="images/goodfloor/1/logo1.png" alt=""/>
+			<div class="flo_pro">
+				<p>热卖促销</p>
+				<ul class="flo_promotion">
+					<li><b></b><a href="">WHOO后秘贴密贴自生三合一精华4件套装 4瓶/盒</a></li>
+					<li><b></b><a href="">WHOO后拱辰享气韵生气津阴阳平衡水乳面霜3件 </a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="flo_right">
+			<div class="flo_right_title">
+				<h3>商品推荐<b></b></h3>
+				<ul>
+					<li><a href="">WHOO</a></li>
+					<li><a href="">更多</a></li>
+				</ul>
+			</div>
+			<div class="flo_right_good">
+				<div class="exhibition">
+					<ul>
+						<li><img src="images/goodfloor/1/exhibition.jpg" alt=""></li>
+					</ul>
+					<div class="flo_arrow_left"></div>
+					<div class="flo_arrow_right"></div>
+					<div class="exhibition_btn">
+						<span></span>
+					</div>
+				</div>
+				<div class="flo_right_goodlist">
+					<ul>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/1.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/2.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/3.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/4.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/5.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href=""><img src="images/goodfloor/1/6.jpg" alt=""></a></dt>
+								<dd>
+									<p>WHOO后拱辰享雪水乳面霜美白三件套（跨境直邮5瓶/盒</p>
+									<span>925.00</span>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fflo"></div>
+<div class="fflo"></div>
+<div class="fflo"></div>
+<div class="fflo"></div>
+<div class="fflo"></div>
+<div class="fflo"></div>
+	<script type="text/javascript">
+		function getSorce(){
+			this.gli=0;
+			this.flo=0;
+			this.titleColor=['#3598DC','#3598dc','#27ae61','#c1392b','#ff7373','#e77e23'];
+			this.contentColor=['#e8f4fc','#e8f4fc','#e8f4fc','#f9eef2','#ffebeb','#fbf1e8',];
+			this.fontColor=['#3598de','#3598de','#27ae61','#c1392b','#ff88bd','#e77e23',];
+
+			this.getDate=function(a){
+				var _self=this;
+				_self.flo=a;
+				//console.log('json/floor'+a+'\.json');
+				$.get("json/floor"+a+".json",function(data){
+					console.log(1)
+					_self.gli = eval(data);
+					//console.log(_self.gli)
+					_self.reload(_self.flo);
+				},'text');
+				
+				}	
+			this.reload=function(b){//改变floor内容以及样式
+				$('.flo_left h3').eq(b).html(this.gli[0]['title']);
+				$('.flo_left').eq(b).css({background:this.contentColor[b-1]})
+				$('.flo_left h3').eq(b).css({background:this.titleColor[b-1]})
+				$('.flo_left h3').eq(b).css({borderColor:this.titleColor[b-1]})
+				$('.flo_left .flo_label').eq(b).html(this.gli[1]['label']);
+				$('.flo_left .flo_left_logo').eq(b).attr('src','images/goodfloor/'+this.gli[4]['img_src']+'/logo1.png');
+				$('.flo_left .flo_pro p').eq(b).html(this.gli[2]['discount_title']);
+				$('.flo_left .flo_pro ul').eq(b).html(this.gli[2]['discount_content']);
+				$('.flo_right_title').eq(b).html(this.gli[3]['right_title']);
+				$('.flo_right_title').eq(b).css({borderColor:this.fontColor[b-1]})
+				$('.flo_right_title b').eq(b).css({borderColor:"#FFF #FFF "+this.fontColor[b-1]+" #fff"})
+				$('.exhibition ul li img').eq(b).attr('src','images/goodfloor/'+this.gli[4]['img_src']+'/exhibition.jpg');
+				for(var j=1;j<=6;j++){
+					$('.flo_right_goodlist ul li:nth-child('+j+') img').eq(b).attr('src','images/goodfloor/'+this.gli[4]['img_src']+'/'+j+'.jpg');
+					$('.flo_right_goodlist ul li:nth-child('+j+') p').eq(b).html(this.gli[j+4]['good_list'])
+					$('.flo_right_goodlist ul li:nth-child('+j+') span').eq(b).html(this.gli[j+4]['good_price'])
+					$('.flo_right_goodlist ul li:nth-child('+j+') span').eq(b).css({color:this.fontColor[b-1]})
+				}
+			}	
+				
+			
+			
+		}
+		$(function(){
+			for(var i=1;i<$('.fflo').length;i++){
+			$('.fflo').eq(i).html($('.fflo').eq(0).html());
+		}
+			
+			for(var j=1;j<$('.fflo').length;j++){
+				var load_good_information=new getSorce();
+				load_good_information.getDate(j);
+			}
+			
+		})
+	
+
+	/*$(function(){
+		
+		/*$('.fflo').eq(1).html($('.fflo').eq(0).html())
+		console.log($('.fflo').eq(1).html())
+		for(var i=0;i<$('.fflo').length;i++){
+
+		}
+		function addfloor(){
+			this.get_information=function(a){
+				$.get("json/floor"+a+".json",function(data){
+					var aDate=eval(data);
+					$('.fflo').eq(a).html(
+	})*///全部数据JSON加载，方案1
+		
+	</script>
+</div>
+<!--purchaser-->
+<div id="ppur">
+	<div id="pur" class="topp">
+		<div class="pur_left">
+			<h3>大家购买了</h3>
+			<div class="pur_left_content">
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/purchaser/1.jpg" alt="#"/></dt>
+					<dd>
+						<p>请***<span>购买了</span></p>
+						<a href="">德国爱他美奶粉1段三盒装 欧洲团爱他美（跨境直邮） 3盒/组（800克/盒）</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="pur_right">
+			<h3>商城公告</h3>
+			<div class="pur_notice">
+				<ul>
+					<li><b></b><a href="">火爆销售中</a><span>(2015-06-30)</span></li>
+					<li><b></b><a href="">消费者告知书</a><span>(2015-06-30)</span></li>
+					<li><b></b><a href="">管理功能说明</a><span>(2015-06-30)</span></li>
+					<li><b></b><a href="">功能使用说明</a><span>(2015-06-30)</span></li>
+					<li><b></b><a href="">提示信息</a><span>(2015-06-30)</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--friend_link-->
+<div id="ffr">
+<div id="fr" class="topp">
+	<div class="fr_content">
+		<p>合作伙伴 | 友情链接</p>
+	</div>
+	<b></b>
+</div>
+</div>
+<!--guarantee-->
+<div id=ggua>
+	<div id="gua" class="topp">
+		<ul>
+			<li>
+				<img src="images/guarantee/1.png">
+				<p>海外直采</p>
+				<span>诚信商家，正规渠道</span>
+			</li>
+			<li>
+				<img src="images/guarantee/2.png">
+				<p>真品货源</p>
+				<span>正品，优质，放心</span>
+			</li>
+			<li>
+				<img src="images/guarantee/3.png">
+				<p>正品保障</p>
+				<span>品牌护航，购物无忧</span>
+			</li>
+			<li>
+				<img src="images/guarantee/4.png">
+				<p>数据互通</p>
+				<span>产品溯源，实时追踪</span>
+			</li>
+			<li>
+				<img src="images/guarantee/5.png">
+				<p>闪电收货</p>
+				<span>为您呈现更快更好的服务</span>
+			</li>
+			<li>
+				<p>惊喜购</p>
+				<span>帮你发现身边的好货</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--bottom-->
+
+<div id="bbot">
+	<div id="bot" class="topp">
+		<ul class="bot_fir">
+			<h3>帮助中心</h3>
+			<li><a href="">积分兑换说明</a></li>
+			<li><a href="">忘记密码怎么办</a></li>
+			<li><a href="">积分细则</a></li>
+			<li><a href="">如何搜索欲购商品</a></li>
+			<li><a href="">如何购买下单</a></li>	
+		</ul>
+		<ul>
+			<h3>物流配送</h3>
+			<li><a href="">合作快递中心</a></li>
+			<li><a href="">上门自提</a></li>
+			<li><a href="">订单发货时效</a></li>
+		</ul>
+		<ul>
+			<h3>支付方式</h3>
+			<li><a href="">分期付款</a></li>
+			<li><a href="">支付宝付款</a></li>
+			<li><a href="">公司转账</a></li>
+		</ul>
+		<ul>
+			<h3>售后服务</h3>
+			<li><a href="">退换货流程</a></li>
+			<li><a href="">退换货政策</a></li>
+			<li><a href="">余额提现流程</a></li>	
+		</ul>
+		<ul>
+			<h3>客服中心</h3>
+			<li><a href="">联系客服</a></li>
+			<li><a href="">如何注册会员</a></li>
+			<li><a href="">如何修改登录密码</a></li>	
+		</ul>
+		<ul>
+			<h3>关于我们</h3>
+			<li><a href="">郑欧商城项目启动</a></li>
+			<li><a href="">郑欧班列加密开行</a></li>
+			<li><a href="">无人售货智能超市</a></li>
+			<li><a href="">郑欧班列回城</a></li>
+			<li><a href="">郑欧本咧常态化高频运行</a></li>	
+		</ul>
+		<div class="bot_help">
+			<p class="bot_phone"><span></span>400-6822-718</p>
+			<p class="bot_email"><span></span>zosc@zih718.com</p>
+			<div class="bot_contact">
+				<dl>
+					<dt><img src="images/bottom/1.jpg"></dt>
+					<dd>
+						<p>扫一扫<br/>关注我们</p>
+					</dd>
+				</dl>
+				<ul>
+					<li class="bot_xinlang">
+						<a href=""><span></span> 新浪微博</a>
+						
+					</li>
+					<li class="bot_tengxun">
+						<a href=""><span></span> 腾讯微博</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+<!--copyright-->
+<div id="ccp">
+	<div id="cp" class="topp">
+		<p class="cp_link">
+			<a href="">首页</a>&nbsp|&nbsp
+			<a href="">招商加盟</a>&nbsp|&nbsp
+			<a href="">联系我们</a>&nbsp|&nbsp
+			<a href="">物流自取</a>&nbsp|&nbsp
+			<a href="">班列订舱</a>
+		</p>
+		<p>Copyright 2015 718shop All rights .</p>
+		<p>豫B2-20150110</p>
+	</div>
+</div>
+<!--backtop-->
+<div id="backtop">
+	<ul>
+		<li class="login"><span>未登陆</span></li>
+		<li class="service"><span>在线客服</span></li>
+		<li class="sc"><span>购物车</span></li>
+		<li class="backt"><span>顶部</span></li>
+		<li class="bc_hidden"></li>
+	</ul>
+	<div class="bc_tool">
+		<img src="images/backtop/1.gif">
+		<div class="plus"></div>
+	</div>
+	<script type="text/javascript">
+			function tool(){
+				this.backtop=function(){
+					$('.backt').click(function(){
+				var back_time=setInterval(
+					function(){
+					var nScroll=document.documentElement.scrollTop||document.body.scrollTop;
+					if(nScroll<=0){
+						clearInterval(back_time);
+					}
+					scrollBy(0,-100)
+					},30)
+			})
+				}
+			}
+			
+	</script>
+</div>
+</body>
+</html>

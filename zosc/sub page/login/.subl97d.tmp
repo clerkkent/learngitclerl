@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zosc-login</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/> 
+</head>
+<body>
+<!--top-->
+<div id="ttop">
+	<div id="top" class="topp">
+		<img class="logo" src="images/1.gif" alt="#"/>
+		<p class="register_p">我已经注册现在就<a>登录</a></p>
+	</div>
+</div>
+<!--re_content-->
+<div id="rre_c">
+	<div id="re_c" class="topp">
+			<div class="left">
+				<ul class="title">
+					<li>手机注册<b></b></li>
+				</ul>
+				<form>
+					<dl>
+						<dt>手机号：</dt>
+						<dd>
+							<input type="text" id="ipt_re01" placeholder="请输入手机号码" />
+						</dd>
+					</dl>
+					<dl class="verification_code">
+						<dt>验证码:</dt>
+						<dd>
+							<input id="ipt03" type="text" placeholder="输入验证码" value=""/>
+							<b></b>
+							<span><img src="images/code/1.png"><a>看不清换一张</a></span>
+							
+						</dd>
+					</dl>
+					<p>
+						确保上方验证码输入正确，点击
+						<span><b></b>发送短信验证</span>
+						,并将您的手机短信所接收到的"6位动态密码"输入到下方短信严恒，再提交下一步。
+					</p>
+					<dl>
+						<dt>短信验证：</dt>
+						<dd>
+							<input type="text" id="ipt_re01" placeholder="输入6位短信验证码" />
+						</dd>
+					</dl>
+					<input class="button" value="下一步"/>
+				</form>
+			</div>
+			<div class="right">
+				<div class="Partner">
+					<a href=""></a>
+				</div>
+
+			</div>
+	</div>
+</div>
+<!--copy-->
+<div id="ccp">
+	<div id="cp" class="topp">
+		<p class="cp_link">
+			<a href="">首页</a>&nbsp|&nbsp
+			<a href="">招商加盟</a>&nbsp|&nbsp
+			<a href="">联系我们</a>&nbsp|&nbsp
+			<a href="">物流自取</a>&nbsp|&nbsp
+			<a href="">班列订舱</a>
+		</p>
+		<p>Copyright 2015 718shop All rights .</p>
+		<p>豫B2-20150110</p>
+	</div>
+</div>
+</body>
+</html>

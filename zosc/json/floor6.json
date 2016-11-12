@@ -1,0 +1,47 @@
+[
+	{
+		"title":"<span>7F</span> 休闲食品",
+	},
+	{
+		"label":"<li><a href=''>休闲零食</a></li><li><a href=''>糖果</a></li><li><a href=''>巧克力</a></li><li><a href=''>饼干</a></li><li><a href=''>提拉米苏</a></li><li><a href=''>谷物棒</a></li>",
+	},
+	{
+		"discount_title":"热卖促销",
+		"discount_content":"<li><b></b><a href=''>波兰进口 格雷斯克全家巧克力威化饼干（郑欧班列进口商品） 80g/包</a></li><li><b></b><a href=''>韩国进口 玉童子杏仁海苔夹心饼干18g（郑欧班列进口商品 ）</a></li>",
+	},
+	{
+		"right_title":"<h3>商品推荐<b></b></h3><h3>COSMOS<b></b></h3><ul><li><a href=''>帕帕姬娜</a></li><li><a href=''>COSMOS</a></li><li><a href=''>更多</a></li></ul>"
+	},
+	{
+		"img_src":"7",
+	},
+	{
+		"good_list":"波兰进口 格雷斯克全家巧克力威化饼干（郑欧班列进口商品） 80g/包",
+		"good_price":"￥7.60",
+	},	
+	{
+					
+		"good_list":"波兰进口 格雷斯克分块威化饼干（郑欧班列进口商品 ） 26g",
+		"good_price":"￥3.60",
+
+	},
+	{
+				
+		"good_list":"韩国进口 COSMOS洋葱味薯片 28g/袋",
+		"good_price":"￥5.50",
+
+	},
+	{
+		"good_list":"韩国进口 玉童子泡菜味海苔2g*8包（郑欧班列进口商品 ）",
+		"good_price":"￥12.5",
+	},
+	{
+		"good_list":"波兰进口 帕帕姬娜夹心面包派 榛子口味 150g",
+		"good_price":"￥15.90",
+	},	
+	{
+					
+		"good_list":"郑欧班列商品  白俄罗斯进口熊穴“Medvezhy log”伏特加白酒 700mL",
+		"good_price":"￥98.00",
+	},	   
+]

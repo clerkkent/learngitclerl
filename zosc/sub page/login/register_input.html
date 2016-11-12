@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zosc-register</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/> 
+	<link rel="shortcut icon" href="http://www.zosc.com/favicon.ico">
+	<script type="text/javascript" src="../../JS/index.js"></script>
+</head>
+<body>
+<div id="alert">
+	<h3>提示信息<a href="javascript:;">×</a></h3>
+	<p class="sec"><b></b><span>登录成功</span></p>
+	<p class="thir">
+		<b></b>
+		<span>2</span>秒后窗口关闭
+	</p>
+</div>
+<!--top-->
+<div id="ttop">
+	<div id="top" class="topp">
+		<img class="logo" src="images/1.gif" alt="#"/>
+		<p class="register_p">我已经注册现在就<a>登录</a></p>
+	</div>
+</div>
+<!--re_content-->
+<div id="rre_c">
+	<div id="re_c" class="topp">
+		<div class="re_cc">
+			<div class="left">
+				<ul class="title">
+					<li>手机注册<b></b></li>
+				</ul>
+				<form>
+					<dl class="re_phone r_phone ">
+						<dt>用户名：</dt>
+						<dd>
+							<input type="text" id="ipt_re01" placeholder="请输入您的用户名" />
+						</dd>
+						<p class="fir">系统生成随机用户名，可选择默认或自行修改一次。</p>
+						<p class="sec"><span></span><em>用户名不可为纯数字，长度必须大于6小于12</em></p>
+					</dl>
+					<dl class="re_phone r_password">
+						<dt>设置密码：</dt>
+						<dd>
+							<input type="password" id="ipt_re02" placeholder="请输入您的密码" />
+						</dd>
+						<p class="fir">系统生成随机密码，请牢记或修改为自设密码。</p>
+						<p class="sec"><span></span>密码不可为纯数字，长度必须大于6小于12</p>
+					</dl>
+					<dl class="re_phone r_email">
+						<dt>邮箱：</dt>
+						<dd>
+							<input type="text" id="ipt_re03" placeholder="输入常用邮箱作为验证及找回密码使用" />
+						</dd>
+						<p class="sec"><span></span><em>邮箱格式错误，请重新输入</em></p>
+					</dl>
+					<p class="agree">
+						<input type="checkbox" checked=""/>阅读并同意<i id="contract">《服务协议》</i>
+					</p>
+					<input class="re_button" value="提交注册"/>
+				</form>
+			</div>
+			<div class="right">
+				<div class="partner">
+					<h3>使用合作网站登录</h3>
+					<a  class="fir" href=""></a>
+					<a  class="sec" href=""></a>
+					<a  class="thir" href=""></a>
+				</div>
+				<div class="after_register">
+					<h3>注册之后您可以</h3>
+					<ul>
+						<li><span style="background-position:0px -76px"></span>购买商品支付订单</li>
+						<li><span style="background-position:-30px -76px"></span>收藏商品关注店铺</li>
+						<li><span style="background-position:-60px -76px"></span>安全交易诚信无忧</li>
+						<li><span style="background-position:-90px -76px"></span>积分获取优惠购物</li>
+						<li><span style="background-position:-120px -76px"></span>会员等级享受特权</li>
+						<li><span style="background-position:-150px -76px"></span>评价晒单站外分享</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+		var con_do=new js_con();
+			con_do.con_change_do();
+			con_do.verify();
+			con_do.register();
+</script>
+<!--copy-->
+<div id="ccp">
+	<div id="cp" class="topp">
+		<p class="cp_link">
+			<a href="">首页</a>&nbsp|&nbsp
+			<a href="">招商加盟</a>&nbsp|&nbsp
+			<a href="">联系我们</a>&nbsp|&nbsp
+			<a href="">物流自取</a>&nbsp|&nbsp
+			<a href="">班列订舱</a>
+		</p>
+		<p>Copyright 2015 718shop All rights .</p>
+		<p>豫B2-20150110</p>
+	</div>
+</div>
+</body>
+</html>

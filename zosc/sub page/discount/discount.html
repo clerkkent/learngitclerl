@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>discount</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../../JS/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/notice.css"/> 
+	<link rel="shortcut icon" href="http://www.zosc.com/favicon.ico">
+	<!--<script type="text/javascript" src="js/js.js"></script>-->
+</head>
+<body>
+<!--add_top-->
+<div id="add_top">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/top.html','#add_top');
+			//good_list_do.js_nav_sub_do();
+		})
+	</script>
+</div>
+<!--address-->
+<p id="address" class="topp">
+	<b></b>
+	<a href="">首页</a><span>></span>
+	<span>限时折扣</span>
+</p>
+<!--classify-->
+<div id="ccla">
+	<div id="cla" class="topp">
+		<ul>
+			<li><a href="">所有分类</a></li>
+			<li><a href="">美妆个护</a></li>
+			<li><a href="">母婴精品</a></li>
+			<li><a href="">食品饮料</a></li>
+			<li><a href="">生活家居</a></li>
+			<li><a href="">基础营养</a></li>
+			<li><a href="">箱包眼镜</a></li>
+		</ul>
+	</div>
+</div>
+<!--discount-->
+<div id="ddi">
+	<div id="di" class="topp">
+		<ul>
+			<li>
+				<dl>
+					<dt><img src="images1/good/1 (1).jpg"></dt>
+					<dd>
+						<p class="fir"><span>郑欧美妆节</span></p>
+						<p class="sec">【团购专享】papa recipe春雨卢卡蜂蜜黑炭面膜10盒（跨境直邮） 10盒/组（10片/盒）</p>
+						<p class="thir">促销价<span>￥<b>769.00</b></span></p>
+						<p class="five"><b></b>直降：￥<span>39</span></p>
+						<div class="six">
+							<a href="">立即抢购</a>
+							<p class="star">
+								<img src="images1/star-on.png" alt="">
+								<img src="images1/star-on.png" alt="">
+								<img src="images1/star-on.png" alt="">
+								<img src="images1/star-on.png" alt="">
+								<img src="images1/star-on.png" alt="">
+							</p>
+							<p class="shop">郑欧购</p>
+						</div>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		/*function pubuliu(){
+			this.height=[];
+			this.firhei=[];
+			this.data=0;
+			this.c=0;
+			this.wa=0;
+			var _self=this;
+			this.caculate=function(x,y){
+				var w=$("#di").css("width");//瀑布流容器宽度
+				this.wa=$("#di ul li").css("width")+x;//数据块总占据宽度
+				this.c=Math.floor(w/this.wa);//计算每列放置数据块列数
+				var wul=this.wa*this.c-x+"px";//?设置合适的UL宽度？
+				$("#di ul").css({width:wul});
+				for(var i=0;i<$("#di ul li").length;i++){
+					this.height.push($("#di ul li").eq(i).css("height"))
+				}
+			}
+			this.getdata=function(){
+				$.get("json/good.json",function(data){
+					var _self.data=eval(data);
+					for(var i=0;i<_self.c;i++){
+						$("#di ul li").eq(i).css({top:"0",left:this.wa*i+"px",opacity:"1"})
+						_self.firhei.push("$("#di ul li").eq(i).css("height")");
+					}
+				});
+			}
+		}*/
+		function disload(){
+			this.getdata=function(){
+				$.get("json/good.json",function(data){
+					var date=eval(data);
+					for(var i=0;i<date.length;i++){
+						var _html='<li><dl><dt><img src="images1/good/1 ('+date[i]["pic"]+').jpg"></dt><dd><p class="fir"><span>郑欧美妆节</span></p><p class="sec">'+date[i]["name"]+'</p><p class="thir">促销价<span>￥<b>'+date[i]["price"]+'</b></span></p><p class="five"><b></b>直降：￥<span>'+date[i]["reduce"]+'</span></p><div class="six"><a href="">立即抢购</a><p class="star"><img src="images1/star-on.png" alt=""><img src="images1/star-on.png" alt=""><img src="images1/star-on.png" alt=""><img src="images1/star-on.png" alt=""><img src="images1/star-on.png" alt=""></p><p class="shop">郑欧购</p></div></dd></dl></li>'
+							$("#di ul").append(_html);
+					}
+				},"text");
+			}
+		}
+		$(function(){
+			var dis_load=new disload();
+			dis_load.getdata();
+		})
+	</script>
+</div>
+<!--add_bot-->
+<div id="add_bottom">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/bottom.html','#add_bottom');
+		})
+	</script>
+</div>
+</body>
+</html>

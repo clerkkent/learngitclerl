@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../../JS/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/good_details.css"/> 
+</head>
+<body>
+<!--add_top-->
+<div id="add_top">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/top.html','#add_top');
+			//good_list_do.js_nav_sub_do();
+		})
+	</script>
+</div>
+<!--main-->
+<div id="mma">
+	<div id="ma" class="topp">
+		<div class="addr">
+			<p>
+				<i></i>
+				<span>首页</span><b>></b>
+				<span>美妆个护</span><b>></b>
+				<span>面部护理</span><b>></b>
+				<span>面膜</span><b>></b>
+				<span>Clinie可莱丝乐肤凯尔系列补水面膜2盒装（跨境直邮） 2盒/组（10贴/盒）</span><b></b>
+			</p>
+		</div>
+		<div class="good_summary">
+		<script type="text/javascript">
+			function Magnifier(){
+				this.x=0;
+				this.y=0;
+				var _self=this;
+				this.src=0;
+				this.count=0;
+				/*this.l=parseInt(($('.img1')[0].currentStyle || window.getComputedStyle($('.img1')[0],null).marginLeft));
+				this.t=parseInt(($('.img1')[0].currentStyle || window.getComputedStyle($('.img1')[0],null).marginTop));*///此处为获取外框
+				this.reload=function(x,y){
+					$('.output img')[0].style.left=-2*x+"px";
+					$('.output img')[0].style.top=-2*y+"px";
+							}
+
+				this.change=function(){
+					var _self1=this;
+					$('.usmall li').click(function(){
+						_self1.src=$('.usmall li').index($(this))+1;
+						$('.output img').attr({src:'images1/summary/'+_self1.src+'.jpg'})
+						$('.img1 img').attr({src:'images1/summary/'+_self1.src+'.jpg'})
+					});
+					$('.buy .next').click(function(){
+						if(_self1.count<=0){
+							_self1.count=0;
+						}else{
+							_self1.count--;
+						}
+						$('.buy input').attr({value:_self1.count})
+					})
+					$('.buy .pre').click(function(){
+							_self1.count++;
+							$('.buy input').attr({value:_self1.count})
+					})
+
+				}
+				$('.img1').mousemove(function(e){
+					var e=e||window.event;
+					_self.x=e.clientX;
+					_self.y=e.clientY;
+					if(_self.x>0)
+					$('.Magnifier')[0].style.left=_self.x-$('#ma')[0].offsetLeft-$('.Magnifier')[0].offsetWidth/2+'px';
+
+					$('.Magnifier')[0].style.top=_self.y-$('#mma')[0].offsetTop-$('.addr')[0].offsetHeight-$('.Magnifier')[0].offsetHeight/2+'px';
+
+					console.log($('#mma')[0].offsetTop)
+					
+					_self.reload(parseInt($('.Magnifier')[0].style.left),parseInt($('.Magnifier')[0].style.top));
+					$('.output').css({transition: 'all .6s',width:'360px',height:'360px',opacity:'1', right:'-360px',top:'0px',});
+					$('.notice').css({transition:'all .6s',width:'360px',height:'30px',right:'-360px',top:'360px',opacity:'1'})
+					/*console.log($('.Magnifier')[0].style.left);
+					console.log($('.Magnifier')[0].style.top);*/
+				})
+				$('.img1').mouseout(function(){
+					$('.output').css({transition: 'all .6s',width:'0px',height:'0px',opacity:'0', right:'180px',top:'180px',});
+					$('.notice').css({transition:'all .6s',width:'0px',height:'0px',right:'180px',top:'180px',opacity:'0'})
+				})//事件触发函数
+
+			}
+			$(function(){
+				var  magn=new Magnifier();
+				magn.reload();
+				magn.change();
+			})
+		</script>
+			<div class="show">
+				<div class="img1">
+					<img class="big" src="images1/summary/1.jpg">
+					<span class="Magnifier"></span>
+				</div>
+				<div class="output">
+					<img class="big" src="images1/summary/1.jpg">
+				</div>
+				<p class="notice">
+					鼠标滚轮向下或者向上移动能够放大或者缩小图片欧~~
+				</p>	
+				<ul class="usmall">
+					<li class="small"><img src="images1/summary/1.jpg"></li>
+					<li class="small"><img src="images1/summary/2.jpg"></li>
+				</ul>
+				<ul class="contrast">
+					<li>分享（<span>0</span>）</li>
+					<li>收藏商品（<span>0</span>）</li>
+					<li class="cont"><b></b>加入对比</li>
+					<li class="report">举报</li>
+				</ul>
+			</div>
+			<div class="description">
+				<p class="name">THE FACE SHOP 菲诗小铺 绿豆深层祛痘消炎 洗面奶 170毫升/ 支</p>
+				<div class="main_in">
+					<p class="oprice">市&nbsp场&nbsp价:<span>￥35.00</span></p>
+					<p class="price">商&nbsp城&nbsp价:<span>￥29.00</span></p>
+					<p class="tax">单件税金：<span>￥0.00</span></p>
+					<p class="mark">
+						<span>商品评分:</span>
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<span class="last">共有<b>0</b>条评价</span>
+					</p>
+					<p class="imgg"><img src="images1/2340.png"><span>客户端扫购有惊喜</span></p>
+				</div>
+				<div class="services">
+					<p>
+						服&nbsp务：由<span class="shop">首尔生活</span>发货并提供售后服务。18:00 前完成下单，预计( <span class="arrive">11月04日</span> ) 送达
+					</p>
+				</div>
+				<div class="sendto">
+					<p class="fir">配送至：</p>
+					<dl>
+						<dt>河南省郑州市管城回族区<b></b></dt>
+						<dd>
+							<ul title="index">
+								<li>河南<b></b></li>
+								<li>郑州市<b></b></li>
+								<li>
+									<dl>
+										<dt>管城回族区<b></b></dt>
+										<dd>
+											<ul title="index-layout">
+													<li>上街区</li>
+													<li>中原区</li>
+													<li>中牟县</li>
+													<li>巩义市</li>
+													<li>惠济区</li>
+													<li>新密市</li>
+													<li>登封市</li>
+													<li>管城回族区</li>
+													<li>荣阳市</li>
+													<li>二七区</li>
+													<li>新郑市</li>
+													<li>金水区</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="close">
+									关闭
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<p class="sec">有货</p>
+					<p class="thir">运费：<span class="freigh">6.00</span> 元，店铺满 <span class="limit">188.00</span> 元 免运费</p>
+				</div>
+				<div class="amount">
+					<p>颜色：</p>
+					<p class="amount_p"><img src="images1/summary/1.jpg" alt="">支<b></b></p>
+				</div>
+				<div class="buy">
+					<dl>
+						<dt><input type="text" value="1"/></dt>
+						<dd>
+							<button class="pre"></button>
+							<button class="next"></button>
+						</dd>
+					</dl>
+					<p class="add"><b></b>添加购物车</p>
+					<p class="none"><b></b>您选择的商品库存<span class="stock">10</span></p>
+					<p class="buy_im">立即购买</p>
+				</div>
+			</div>
+			<div class="shop_in">
+				<h3>首尔生活</h3>
+				<p class="synthesize">综合评分：<b></b><span>5</span>分</p>
+				<p class="dynamic">店铺动态评分<span>与行业相比</span></p>
+				<ul>
+					<li>描述相符<span>&nbsp5&nbsp</span>分</li>
+					<li>服务态度<span>&nbsp5&nbsp</span>分</li>
+					<li>发货速度<span>&nbsp5&nbsp</span>分</li>
+				</ul>
+				<div class="company">
+					<p>公司名称： 郑州金边贸易有限公司</p>
+					<p>所 在 地： 河南 郑州市 管城回族区</p>
+					<p>电　　话： 13523029415</p>
+				</div>
+				<div class="more">
+					<a href="">进入商家店铺</a>
+					<a href="" class="collect">收藏店铺<span>17</span></a>
+				</div>
+				<div class="help">
+					<dl class="map">
+						<dt><b></b>店铺地图</dt>
+						<dd></dd>
+					</dl>
+					<dl class="connect">
+						<dt><b></b>店铺二维码</dt>
+						<dd><img src="images1/2340.png"></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--content-->
+<div id="ccon">
+	<div class="topp">
+	<div id="con" >
+		<div class="con_left">
+			<ul class="flo1">
+				<h3>首尔生活</h3>
+				<li>描述相符<span>5</span></li>
+				<li>服务态度<span>5</span></li>
+				<li>发货速度<span>5</span></li>
+			</ul>
+			<img class="little" src="images1/little.jpg" alt="">
+			<div class="shop_in">
+				<h3>首尔生活</h3>
+				<p class="synthesize">综合评分：<b></b><span>5</span>分</p>
+				<p class="dynamic">店铺动态评分<span>与行业相比</span></p>
+				<ul>
+					<li>描述相符<span>&nbsp5&nbsp</span>分</li>
+					<li>服务态度<span>&nbsp5&nbsp</span>分</li>
+					<li>发货速度<span>&nbsp5&nbsp</span>分</li>
+				</ul>
+				<div class="company">
+					<p>公司名称： 郑州金边贸易有限公司</p>
+					<p>所 在 地： 河南 郑州市 管城回族区</p>
+					<p>电　　话： 13523029415</p>
+				</div>
+				<div class="more">
+					<a href="">进入商家店铺</a>
+					<a href="" class="collect">收藏店铺<span>17</span></a>
+				</div>
+				<div class="help">
+					<dl class="map">
+						<dt><b></b>店铺地图</dt>
+						<dd></dd>
+					</dl>
+					<dl class="connect">
+						<dt><b></b>店铺二维码</dt>
+						<dd><img src="images1/2340.png"></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="waiter">
+				<ul class="pre-sales">
+					<h3>售前客服：</h3>
+					<li class="qq">售前1：<img src="images1/qq.gif"></li>
+					<li class="weixin">售前2：<img src="images1/weixin.gif"></li>
+				</ul>
+				<ul class="after-sales">
+					<h3>售后客服：</h3>
+					<li class="qq">售前1：<img src="images1/qq.gif"></li>
+					<li class="weixin">售前2：<img src="images1/weixin.gif"></li>
+				</ul>
+				<ul class="worktime">
+					<h3>工作时间</h3>
+					<li>工作时间&nbspAM&nbsp08:00-PM</li>
+					<li>22:00</li>
+				</ul>
+			</div>
+			<div class="classify">
+				<h3>商品分类</h3>
+				<ul class="fir">
+					<li><a href="">按新品</a></li>
+					<li><a href="">按价格</a></li>
+					<li><a href="">按销量</a></li>
+					<li><a href="">按人气</a></li>
+				</ul>
+				<div class="classify_sea">
+					<input class="fir" type="text" placeholder="搜索店内商品"/>
+					<input  class="sec"  type="submit" value="搜索"/>
+				</div>
+				<div class="more">
+					<h3>_&nbsp&nbsp全部商品</h3>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>
+					<ul>
+						<h3>_&nbsp&nbsp品牌护肤</h3>
+						<li><a href="">WHOO</a></li>
+						<li><a href="">SU:M37°</a></li>
+						<li><a href="">O HUI</a></li>
+						<li><a href="">HERA</a></li>
+						<li><a href="">Sulwhasoo</a></li>
+						<li><a href="">It'S SKIN</a></li>
+						<li><a href="">LΛNEIGE</a></li>
+						<li><a href="">Holika Holika</a></li>
+						<li><a href="">LEADERS</a></li>
+						<li><a href="">Coréana</a></li>
+					</ul>		
+				</div>
+			</div>
+			<div class="range">
+					<h3>商品排行</h3>
+					<div class="range_bt">
+						<p class="hot_sales">热销商品排行</p>
+						<p class="hot_collect">热销收藏排行</p>
+					</div>
+					<ul class="list">
+						<li>
+							<dl>
+								<dt><img src="images1/content/1.jpg"></dt>
+								<dd>
+									<p class="name">Cloud 9 九朵云  美白补水保湿抗皱马油霜 70克/ 瓶</p>
+									<p class="price">
+										￥<span>85.00</span>
+									</p>
+									<p class="sales">
+										<b></b>
+										售出：<span>2</span>笔
+									</p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<a class="other" href="">查看本店其他商品</a>
+				</div>
+		</div>
+		<div class="con_right">
+				<ul class="title">
+					<li class="fir">商品详情</li>
+					<li>商品评价（<span>0</span>）</li>
+					<li>销售记录（<span>0</span>）</li>
+					<li>购买咨询</li>
+					<li class="last"></li>
+				</ul>
+				<ul class="market_information">
+					<li>商家货号：8806364010646</li>
+					<li>品牌</li>
+				</ul>
+				<div class="good_information">
+					<img src="images1/show/1.jpg" alt="">
+					<img src="images1/show/2.jpg" alt="">
+					<img src="images1/show/2-1.png" alt="">
+					<img src="images1/show/3.jpg" alt="">
+					<img src="images1/show/4.png" alt="">
+					<img src="images1/show/5.jpg" alt="">
+					<img src="images1/show/6.jpg" alt="">
+					<img src="images1/show/7.jpg" alt="">
+					<img src="images1/show/8.jpg" alt="">
+					<img src="images1/show/9.png" alt="">
+					<img src="images1/show/10.jpg" alt="">
+					<img src="images1/show/11.png" alt="">
+					<img src="images1/show/12.jpg" alt="">
+					<img src="images1/show/13.jpg" alt="">
+					<img src="images1/show/14.png" alt="">
+					<img src="images1/show/15.png" alt="">
+					<img src="images1/show/16.png" alt="">
+				</div>
+				<div class="comment">
+					<h3>商品评价</h3>
+					<div class="soccer">
+						<ul class="so_left">
+							<li class="fir">100%<span>好评</span></li>
+							<li class="sec">共有0人参与评分</li>
+						</ul>
+						<ul class="so_middle">
+							<li class="fir">好评<span>(100%)</span><b></b></li>
+							<li class="sec">中评<span>(0%)</span>&nbsp&nbsp&nbsp<b></b></li>
+							<li class="thir">差评<span>(0%)</span>&nbsp&nbsp&nbsp<b></b></li>
+						</ul>
+						<ul class="so_right">
+							<li class="fir">您可对已购商品进行评价</li>
+							<li class="sec"><b></b>评价商品</li>
+						</ul>
+					</div>
+				</div>
+				<div class="text">
+					<ul class="title">
+						<li class="fir">商品评价（<span>0</span>）</li>
+						<li>好评（<span>0</span>）</li>
+						<li>中评</li>
+						<li>差评（<span>0</span>）</li>
+						<li class="last"></li>
+					</ul>
+					<p>暂无符合条件的数据记录</p>
+				</div>
+				<div class="sale_log">
+					<h3>销售记录</h3>
+					<p class="fir">商城价<span>29.00</span>元<b>购买的价格不同可能是由于店铺往期促销活动引起的，详情可以咨询卖家</b></p>
+					<ul>
+						<li  class="fir">买家</li>
+						<li class="sec">购买数量</li>
+						<li class="thir">购买时间</li>
+					</ul>
+					<p class="secc">暂无符合条件的数据记录</p>
+				</div>
+				<div class="consult">
+					<h3>购买咨询</h3>
+					<p>因厂家更改商品包装、场地、附配件等不做提前通知，且每位咨询者购买、提问时间等不同。为此，客服给到的回复仅对提问者3天<br/>内有效，其他网友仅供参考！给您带来的不变还请谅解，谢谢！</p>
+					<button>我要提问</button>
+				</div>
+				<div class="consult1">
+					<ul class="title">
+						<li class="fir">全部</li>
+						<li>商品咨询</li>
+						<li>支付问题</li>
+						<li>发票及保修</li>
+						<li>促销及赠品</li>
+						<li class="last"></li>
+					</ul>
+					<p>暂无符合条件的数据记录</p>
+				</div>
+				<div class="recommend_more">
+					<h3>推荐商品</h3>
+					<dl>
+						<dt><img src="images1/recommend/1.jpg"></dt>
+						<dd>
+							<p class="fir">【范冰冰霜】 BLACKMORES 澳佳宝 天然VE维生素滋润 面霜 50克/ 支</p>
+							<p class="sec">￥75</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images1/recommend/2.jpg"></dt>
+						<dd>
+							<p class="fir">【范冰冰霜】 BLACKMORES 澳佳宝 天然VE维生素滋润 面霜 50克/ 支</p>
+							<p class="sec">￥75</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images1/recommend/3.png"></dt>
+						<dd>
+							<p class="fir">【范冰冰霜】 BLACKMORES 澳佳宝 天然VE维生素滋润 面霜 50克/ 支</p>
+							<p class="sec">￥75</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images1/recommend/4.jpg"></dt>
+						<dd>
+							<p class="fir">【范冰冰霜】 BLACKMORES 澳佳宝 天然VE维生素滋润 面霜 50克/ 支</p>
+							<p class="sec">￥75</p>
+						</dd>
+					</dl>
+				</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+			function js_content(){
+				this.date=0;
+				this.add=function(url){
+					var _self=this;
+					$.get(url,function(data){
+						_self.date=eval(data);
+						console.log(_self.date)
+						console.log($('.range .list'))
+						$('.range .list').html('');
+						for(var i=0;i<_self.date.length;i++){
+						$('.range .list').append('<li><dl><dt><img src="images1/content/'+_self.date[i]["pic"]+'.jpg"></dt><dd><p class="name">'+_self.date[i]["name"]+'</p><p class="price">￥<span>'+_self.date[i]["price"]+'</span></p><p class="sales"><b></b>售出：<span>'+_self.date[i]["sale"]+'</span>笔</p></dd></dl></li>')
+							}
+					},'text')
+				}
+			}
+			$(function(){
+				var content_do=new js_content();
+				content_do.add('json/add1.json');
+				$('.range .hot_sales').mouseover(function(){
+					content_do.add('json/add1.json');
+				});
+				$('.range .hot_collect').mouseover(function(){
+					content_do.add('json/collect.json');
+				});
+
+			})
+		</script>
+	</div>
+</div>
+<!--add_bot-->
+<div id="add_bottom">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/bottom.html','#add_bottom');
+		})
+	</script>
+</div>
+</body>
+</html>

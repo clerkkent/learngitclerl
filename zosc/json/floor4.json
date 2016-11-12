@@ -1,0 +1,47 @@
+[
+	{
+		"title":"<span>5F</span> 美味饮品",
+	},
+	{
+		"label":"<li><a href=''>饮料</a></li><li><a href=''>乳品</a></li><li><a href=''>矿泉水</a></li><li><a href=''>礼盒</a></li>",
+	},
+	{
+		"discount_title":"热卖促销",
+		"discount_content":"<li><b></b><a href=''>白俄罗斯进口萨乌什金全脂纯牛奶（郑欧班列进口商品 ） 1L 脂肪3.1%</a></li><li><b></b><a href=''>英国快乐猴纯天然果汁果汁180ml 单瓶（郑欧班列进口商品 ） 热带水果果汁</a></li>",
+	},
+	{
+		"right_title":"<h3>商品推荐<b></b></h3><ul><li><a href=''>快乐猴</a></li><li><a href=''>萨乌什金</a></li><li><a href=''>尚百瑞</a></li><li><a href=''>更多</a></li></ul>"
+	},
+	{
+		"img_src":"5",
+	},
+	{
+		"good_list":"白俄罗斯进口萨乌什金全脂纯牛奶  6瓶萨新礼盒装  1L/瓶（郑欧班列进口商品） 脂肪3.1%",
+		"good_price":"89.4",
+	},	
+	{
+					
+		"good_list":"白俄罗斯进口 萨淇苹果樱桃汁（郑欧班列进口商品） 0.95L/瓶",
+		"good_price":"15.80",
+
+	},
+	{
+				
+		"good_list":"白俄罗斯进口 祖母奶罐纯牛奶（含2.5%脂肪）（郑欧班列进口商品）奶罐礼盒装 一箱装（6瓶/",
+		"good_price":"95.4",
+
+	},
+	{
+		"good_list":"	波兰进口好特思hortex100%阳光鲜橙果汁（郑欧班列进口商品） 1L",
+		"good_price":"13.30",
+	},
+	{
+		"good_list":"德国进口Glockengold格朗金 优质橙汁（郑欧班列进口商品） 一箱装（12瓶/箱",
+		"good_price":"153.60",
+	},	
+	{
+					
+		"good_list":"	德国进口 Glockengold格朗金 天然矿泉水（郑欧班列进口商品 ） 1L",
+		"good_price":"10.80",
+	},	   
+]

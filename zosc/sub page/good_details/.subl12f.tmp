@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../../JS/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/good_details.css"/> 
+</head>
+<body>
+<!--add_top-->
+<div id="add_top">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/top.html','#add_top');
+			//good_list_do.js_nav_sub_do();
+		})
+	</script>
+</div>
+<!--main-->
+<div id="mma">
+	<div id="ma" class="topp">
+		<div class="addr">
+			<p>
+				<i></i>
+				<span>首页</span><b>></b>
+				<span>美妆个护</span><b>></b>
+				<span>面部护理</span><b>></b>
+				<span>面膜</span><b>></b>
+				<span>Clinie可莱丝乐肤凯尔系列补水面膜2盒装（跨境直邮） 2盒/组（10贴/盒）</span><b></b>
+			</p>
+		</div>
+		<div class="good_summary">
+			<div class="show">
+				<img class="big" src="images1/summary/1.jpg">
+				<ul class="usmall">
+					<li class="small"><img src="images1/summary/1-1.jpg"></li>
+					<li class="small"><img src="images1/summary/1-2.jpg"></li>
+				</ul>
+				<ul class="contrast">
+					<li>分享（<span>0</span>）</li>
+					<li>收藏商品（<span>0</span>）</li>
+					<li class="cont"><b></b>加入对比</li>
+					<li class="report">举报</li>
+				</ul>
+			</div>
+			<div class="description">
+				<p class="name">THE FACE SHOP 菲诗小铺 绿豆深层祛痘消炎 洗面奶 170毫升/ 支</p>
+				<div class="main_in">
+					<p class="oprice">市场价<span>￥35.00</span></p>
+					<p class="price">市场价<span>￥29.00</span></p>
+					<p class="tax">￥0.00</p>
+					<p class="mark">
+						商品评价
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<img src="images1/star-on.png" alt="">
+						<span>共有<b>0</b>条评价</span>
+					</p>
+					<p><img src="images1/2340.png"><span>客户端扫购有惊喜</span></p>
+				</div>
+				<div class="services">
+					<p>
+						服&nbsp务：由<span class="shop">首尔生活</span>发货并提供售后服务。18:00 前完成下单，预计( <span class="arrive">11月04日</span> ) 送达
+					</p>
+				</div>
+				<div class="sendto">
+					<p class="fir">配送至：</p>
+					<dl>
+						<dt>河南省郑州市管城回族区<b></b></dt>
+						<dd></dd>
+					</dl>
+					<p class="sec">有货</p>
+					<p class="thir">运费：<span class="freigh">6.00</span> 元，店铺满 <span class="limit">188.00</span> 元 免运费</p>
+				</div>
+				<div class="amount">
+					<p>颜色：</p>
+					<p><span></span>支</p>
+				</div>
+				<div class="buy">
+					<dl>
+						<dt><input>1</input></dt>
+						<dd>
+							<button class="pre"></button>
+							<button class="next"></button>
+						</dd>
+					</dl>
+					<p class="add"><b></b>添加购物车</p>
+					<p><b></b>您选择的商品库存<span class="stock">10</span></p>
+					<p class="buy_im">立即购买</p>
+				</div>
+			</div>
+			<div class="shop_in">
+				<h3>首尔生活</h3>
+				<p class="synthesize">店铺评分：<b></b><span>5</span>分</p>
+				<p class="dynamic">店铺动态评分<span>与行业相比</span></p>
+				<ul>
+					<li>描述相符<span>5</span>分</li>
+					<li>服务态度<span>5</span>分</li>
+					<li>发货速度<span>5</span>分</li>
+				</ul>
+				<div class="company">
+					<p>公司名称： 郑州金边贸易有限公司</p>
+					<p>所 在 地： 河南 郑州市 管城回族区</p>
+					<p>电　　话： 13523029415</p>
+				</div>
+				<div class="more">
+					<a href="">进入商家店铺</a>
+					<a href="" class="collect">收藏店铺<span>17</span></a>
+				</div>
+				<div class="help">
+					<dl class="map">
+						<dt><b></b>店铺地图</dt>
+						<dd></dd>
+					</dl>
+					<dl class="connect">
+						<dt><b></b>店铺二维码</dt>
+						<dd><img src="images1/2340.png"></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--add_bot-->
+<div id="add_bottom">
+	<script type="text/javascript">
+		$(function(){
+			var good_list_do=new good_list();
+			good_list_do.add_top('../json/bottom.html','#add_bottom');
+		})
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zosc-login</title>
+	<script type="text/javascript" src="../../JS/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/> 
+</head>
+<body>
+<!--top-->
+<div id="ttop">
+	<div id="top" class="topp">
+		<img class="logo" src="images/1.gif" alt="#"/>
+		<p class="register_p">我已经注册现在就<a>登录</a></p>
+	</div>
+</div>
+<!--re_content-->
+<div id="rre_c">
+	<div id="re_c" class="topp">
+		<div class="re_cc">
+			<div class="left">
+				<ul class="title">
+					<li>手机注册<b></b></li>
+				</ul>
+				<form>
+					<dl class="re_phone">
+						<dt>手机号：</dt>
+						<dd>
+							<input type="text" id="ipt_re01" placeholder="请输入手机号码" />
+						</dd>
+						<p><span></span>请输入正确的手机号</p>
+					</dl>
+					<dl class="verification_code">
+						<dt>验证码:</dt>
+						<dd>
+							<input id="ipt03" type="text" placeholder="输入验证码" value=""/>
+							<b></b>
+							<span><img src="images/code/1.png"><a>看不清换一张</a></span>
+							
+						</dd>
+					</dl>
+					<p>
+						确保上方验证码输入正确，点击
+						<span><b></b>发送短信验证</span>
+						,并将您的手机短信所接收到的"6位动态密码"输入到下方短信严恒，再提交下一步。
+					</p>
+					<dl>
+						<dt>短信验证：</dt>
+						<dd>
+							<input type="text" id="ipt_re01" placeholder="输入6位短信验证码" />
+						</dd>
+					</dl>
+					<input class="button" value="下一步"/>
+				</form>
+			</div>
+			<div class="right">
+				<div class="partner">
+					<h3>使用合作网站登录</h3>
+					<a  class="fir" href=""></a>
+					<a  class="sec" href=""></a>
+					<a  class="thir" href=""></a>
+				</div>
+				<div class="after_register">
+					<h3>注册之后您可以</h3>
+					<ul>
+						<li><span style="background-position:0px -76px"></span>购买商品支付订单</li>
+						<li><span style="background-position:-30px -76px"></span>收藏商品关注店铺</li>
+						<li><span style="background-position:-60px -76px"></span>安全交易诚信无忧</li>
+						<li><span style="background-position:-90px -76px"></span>积分获取优惠购物</li>
+						<li><span style="background-position:-120px -76px"></span>会员等级享受特权</li>
+						<li><span style="background-position:-150px -76px"></span>评价晒单站外分享</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+		var con_do=new js_con();
+			con_do.con_change_do();
+			con_do.verify();
+</script>
+<!--copy-->
+<div id="ccp">
+	<div id="cp" class="topp">
+		<p class="cp_link">
+			<a href="">首页</a>&nbsp|&nbsp
+			<a href="">招商加盟</a>&nbsp|&nbsp
+			<a href="">联系我们</a>&nbsp|&nbsp
+			<a href="">物流自取</a>&nbsp|&nbsp
+			<a href="">班列订舱</a>
+		</p>
+		<p>Copyright 2015 718shop All rights .</p>
+		<p>豫B2-20150110</p>
+	</div>
+</div>
+</body>
+</html>
